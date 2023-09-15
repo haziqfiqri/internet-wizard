@@ -9,6 +9,7 @@ import {
   useClipboard,
   Icon,
   Tooltip,
+  Image,
 } from "@chakra-ui/react";
 import { FiArrowUpRight } from "react-icons/fi";
 

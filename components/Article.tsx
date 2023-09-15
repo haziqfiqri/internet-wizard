@@ -38,7 +38,7 @@ export default function Article() {
       <Flex maxW="container.sm" mx="auto" py={2} px={4} pb="35px">
         <Box>
           <Text fontSize="14px" fontWeight="medium" color="#ffffff" pb="3px">
-            Digital Garden (WIP)
+            Digital Garden
           </Text>
 
           {isLoading || blogArticles.length === 0 ? (

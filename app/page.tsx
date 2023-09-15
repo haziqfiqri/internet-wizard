@@ -4,15 +4,17 @@ import Header from "@/components/Header";
 import Work from "@/components/Work";
 import Footer from "@/components/Footer";
 import Article from "@/components/Article";
+import Form from "@/components/Form";
 
 export default async function Home() {
   return (
     <main>
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <Article />
-      <Work />
-      <Footer />
+      {/* <Form /> */}
+      {/* <Work /> */}
+      {/* <Footer /> */}
     </main>
   );
 }
