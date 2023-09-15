@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Flex, Link, Text, Icon } from "@chakra-ui/react";
+import { Box, Flex, Link, Text, Icon, Badge } from "@chakra-ui/react";
 import { FiArrowUpRight } from "react-icons/fi";
 
 function Work() {
@@ -12,26 +12,40 @@ function Work() {
     endDate: string | number;
     description: string;
     stacks: Array<string>;
+    position: string;
   }> = [
     {
       company: "Photobook",
       link: "https://www.photobook.com.my/",
-      startDate: 2023,
+      startDate: "Apr 2023",
       endDate: "present",
       title: "L3 Software Engineer",
       description:
-        "Donning two hats in  my role with orchestration team. Leveraging between software engineering and cloud orchestrating.",
+        "Donning two hats currently with orchestration team. Leveraging software engineering and cloud orchestrating.",
       stacks: ["Laravel", "PHP", "ReactJs", "AWS Cloud", "SQL"],
+      position: "full-time",
+    },
+    {
+      company: "Clazzy",
+      link: "https://www.clazzy.my/",
+      startDate: "Jun 2023",
+      endDate: "Sep 2023",
+      title: "Frontend Engineer",
+      description:
+        "Embarked on a distinguished journey with Clazzy, to a paramount outsourced project aligned with Petronas.",
+      stacks: ["Loopback", "TypeScript", "VueJs", "Quasar", "Tanstack"],
+      position: "part-time",
     },
     {
       company: "Carsome",
       link: "https://www.carsome.my/",
-      startDate: 2021,
-      endDate: 2023,
+      startDate: "Nov 2021",
+      endDate: "Apr 2023",
       title: "L1 Software Engineer",
       description:
         "Part of the core team to pioneered microservice for a seamless translations across pillars. Bolstered inter-departmental collaboration and 3rd party integration.",
       stacks: ["NestJs", "TypeScript", "VueJs", "AWS Cloud", "NoSQL"],
+      position: "full-time",
     },
   ];
 
@@ -55,7 +69,10 @@ function Work() {
               {/* <Flex flexDirection={["column", "column", "column", "row"]}>
                 <Box maxW={["30%"]}> */}
               <Text fontSize="14px" fontWeight="medium" color="#a3a3a3">
-                {experience.startDate} - {experience.endDate}
+                {experience.startDate} - {experience.endDate}{" "}
+                <Badge ml="2" fontSize={10} variant={"solid"}>
+                  {experience.position}
+                </Badge>
               </Text>
               {/* </Box>
                 <Box maxW={["70%", "100%"]}> */}
