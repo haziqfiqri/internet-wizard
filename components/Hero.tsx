@@ -70,9 +70,9 @@ function Hero() {
             Introduction
           </Text>
           <Text fontSize="14px" fontWeight="medium" color="#a3a3a3">
-            A digital maestro at your service, orchestrating intuitive and
-            dynamically responsive experiences tailored to amplify your
-            business. Let&apos;s connect.
+            I&apos;m specialize in crafting applications that seamlessly bridge
+            the gap between cutting-edge technology and your business needs,
+            fostering growth and innovation.
           </Text>
         </Box>
       </Flex>
