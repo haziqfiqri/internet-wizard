@@ -20,7 +20,7 @@ function Work() {
       endDate: "present",
       title: "L3 Software Engineer",
       description:
-        "Building something awesome in the orchestration team. Lately I've been thinkering and getting my hands dirty with cloud.",
+        "Donning two hats in  my role with orchestration team. Leveraging between software engineering and cloud orchestrating.",
       stacks: ["Laravel", "PHP", "ReactJs", "AWS Cloud", "SQL"],
     },
     {
