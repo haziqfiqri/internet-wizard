@@ -30,9 +30,9 @@ function Work() {
       link: "https://www.clazzy.my/",
       startDate: "Jun 2023",
       endDate: "Sep 2023",
-      title: "Frontend Engineer",
+      title: "L3 Software Engineer",
       description:
-        "Embarked on a distinguished journey with Clazzy, to a paramount outsourced project aligned with Petronas.",
+        "A distinguished endeavor with the satellite team on a paramount outsourced recruitment platform project for Petronas.",
       stacks: ["Loopback", "TypeScript", "VueJs", "Quasar", "Tanstack"],
       position: "part-time",
     },
@@ -47,6 +47,28 @@ function Work() {
       stacks: ["NestJs", "TypeScript", "VueJs", "AWS Cloud", "NoSQL"],
       position: "full-time",
     },
+    {
+      company: "Hatio",
+      link: "https://www.hatiolab.com/",
+      startDate: "Apr 2021",
+      endDate: "Jul 2021",
+      title: "L1 Software Engineer",
+      description:
+        "A brief yet enjoyable experience that exposed me to the tech field. I worked closely with a hand-picked team of managers, engineers, customer supports and testers.",
+      stacks: ["NodeJs", "TypeScript", "PolymerJs", "Docker", "GraphQL"],
+      position: "full-time",
+    },
+    // {
+    //   company: "Fragbit Studio",
+    //   link: "https://www.hatiolab.com/",
+    //   startDate: "Apr 2021",
+    //   endDate: "Jul 2021",
+    //   title: "L1 Software Engineer",
+    //   description:
+    //     "A brief yet enjoyable experience that exposed me to the tech field. I worked closely with a hand-picked team of engineers, supports and testers.",
+    //   stacks: ["NodeJs", "TypeScript", "PolymerJs", "Docker", "GraphQL"],
+    //   position: "internship",
+    // },
   ];
 
   return (
@@ -54,13 +76,13 @@ function Work() {
       <Flex
         maxW="container.sm"
         mx="auto"
-        py={2}
+        py={10}
         px={4}
         align="center"
         pb="35px"
       >
         <Box>
-          <Text fontSize="14px" fontWeight="medium" color="#ffffff" pb="3px">
+          <Text fontSize="20px" fontWeight="medium" color="#ffffff" pb="3px">
             Career Journey
           </Text>
           {workExperiences.map((experience, index) => (
