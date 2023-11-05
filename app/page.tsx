@@ -10,10 +10,10 @@ export default async function Home() {
   return (
     <main>
       {/* <Header /> */}
-      <Hero />
-      <Article />
+{/*       <Hero />
+      <Article /> */}
       {/* <Form /> */}
-      {/* <Work /> */}
+      <Work />
       {/* <Footer /> */}
     </main>
   );
