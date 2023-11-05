@@ -14,7 +14,7 @@ function Work() {
     stacks: Array<string>;
     position: string;
   }> = [
-    {
+     {
       company: "Orius Digital",
       link: "https://www.oriusdigital.com/",
       startDate: "TBA 2024",
@@ -29,7 +29,7 @@ function Work() {
       company: "Photobook",
       link: "https://www.photobook.com.my/",
       startDate: "Apr 2023",
-      endDate: "present",
+      endDate: "TBA 2023",
       title: "L3 Software Engineer",
       description:
         "Donning two hats currently with orchestration team. Leveraging software engineering and cloud orchestrating.",
@@ -43,7 +43,7 @@ function Work() {
       endDate: "Sep 2023",
       title: "L3 Software Engineer",
       description:
-        "A distinguished endeavor with the satellite team on a paramount outsourced recruitment platform project for Petronas.",
+        "A distinguished endeavor with the satellite team on an outsourced recruitment platform project for Petronas.",
       stacks: ["Loopback", "TypeScript", "VueJs", "Quasar", "Tanstack"],
       position: "part-time",
     },
@@ -54,7 +54,7 @@ function Work() {
       endDate: "Apr 2023",
       title: "L1 Software Engineer",
       description:
-        "Part of the core team to pioneered microservice for a seamless translations across pillars. Bolstered inter-departmental collaboration and 3rd party integration.",
+        "Part of the core team to pioneered translations microservice across pillars. Bolstered inter-departmental collaboration and 3rd party integration.",
       stacks: ["NestJs", "TypeScript", "VueJs", "AWS Cloud", "NoSQL"],
       position: "full-time",
     },
@@ -65,7 +65,7 @@ function Work() {
       endDate: "Jul 2021",
       title: "L1 Software Engineer",
       description:
-        "A brief yet enjoyable experience that exposed me to the tech field. I worked closely with a hand-picked team of managers, engineers, customer supports and testers.",
+        "A brief enjoyable exposure to the tech field. Worked closely with a hand-picked team of manager, engineers, customer experience and tester.",
       stacks: ["NodeJs", "TypeScript", "PolymerJs", "Docker", "GraphQL"],
       position: "full-time",
     },
