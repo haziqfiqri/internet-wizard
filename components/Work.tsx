@@ -15,6 +15,17 @@ function Work() {
     position: string;
   }> = [
     {
+      company: "Orius Digital",
+      link: "https://www.oriusdigital.com/",
+      startDate: "TBA 2024",
+      endDate: "present",
+      title: "L4 Software Engineer",
+      description:
+        "10x engineer that enabled digital agencies to expands more than just creative e-commerce and digital marketing.",
+      stacks: ["NestJs", "TypeScript", "ReactJs", "AWS Cloud", "SQL"],
+      position: "full-time",
+    },
+    {
       company: "Photobook",
       link: "https://www.photobook.com.my/",
       startDate: "Apr 2023",
