@@ -17,8 +17,8 @@ function Work() {
      {
       company: "Orius Digital",
       link: "https://www.oriusdigital.com/",
-      startDate: "TBA 2024",
-      endDate: "present",
+      startDate: "Dec 2024",
+      endDate: "Present",
       title: "L4 Software Engineer",
       description:
         "10x engineer that enabled digital agencies to expands more than just creative e-commerce and digital marketing.",
@@ -29,7 +29,7 @@ function Work() {
       company: "Photobook",
       link: "https://www.photobook.com.my/",
       startDate: "Apr 2023",
-      endDate: "TBA 2023",
+      endDate: "Dec 2023",
       title: "L3 Software Engineer",
       description:
         "Donning two hats currently with orchestration team. Leveraging software engineering and cloud orchestrating.",
@@ -68,18 +68,7 @@ function Work() {
         "A brief enjoyable exposure to the tech field. Worked closely with a hand-picked team of manager, engineers, customer experience and tester.",
       stacks: ["NodeJs", "TypeScript", "PolymerJs", "Docker", "GraphQL"],
       position: "full-time",
-    },
-    // {
-    //   company: "Fragbit Studio",
-    //   link: "https://www.hatiolab.com/",
-    //   startDate: "Apr 2021",
-    //   endDate: "Jul 2021",
-    //   title: "L1 Software Engineer",
-    //   description:
-    //     "A brief yet enjoyable experience that exposed me to the tech field. I worked closely with a hand-picked team of engineers, supports and testers.",
-    //   stacks: ["NodeJs", "TypeScript", "PolymerJs", "Docker", "GraphQL"],
-    //   position: "internship",
-    // },
+    }
   ];
 
   return (
