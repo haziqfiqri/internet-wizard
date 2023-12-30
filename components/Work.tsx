@@ -17,7 +17,7 @@ function Work() {
      {
       company: "Orius Digital",
       link: "https://www.oriusdigital.com/",
-      startDate: "Dec 2024",
+      startDate: "Dec 2023",
       endDate: "Present",
       title: "L4 Software Engineer",
       description:
