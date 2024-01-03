@@ -9,11 +9,17 @@ import {
   useClipboard,
   Icon,
   Tooltip,
-  Image,
+  Stack,
 } from "@chakra-ui/react";
+import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
+import { PiSpotifyLogoDuotone } from "react-icons/pi";
+import useSWR from "swr";
 
 function Footer() {
+  const fetcher = (url: any) => fetch(url).then((res) => res.json());
+  const { data } = useSWR("/api/spotify", fetcher);
+
   const textToCopy = "_haziq";
   const { onCopy } = useClipboard(textToCopy);
   const toast = useToast();
@@ -64,14 +70,7 @@ function Footer() {
 
   return (
     <Box bg="black">
-      <Flex
-        maxW="container.sm"
-        mx="auto"
-        py={2}
-        px={4}
-        align="center"
-        pb="160px"
-      >
+      <Flex maxW="container.sm" mx="auto" py={2} px={4} align="center">
         <Box>
           <Text fontSize="14px" fontWeight="medium" color="#ffffff" pb="3px">
             Internet Links
@@ -105,6 +104,7 @@ function Footer() {
                       color="#ffffff"
                       onClick={handleCopyClick}
                       pr="8px"
+                      href="/"
                     >
                       {link.handle}
                       <Icon
@@ -119,6 +119,39 @@ function Footer() {
               </Box>
             ))}
           </Box>
+        </Box>
+      </Flex>
+      <Flex
+        display="flex"
+        flexDirection="row"
+        justifyContent="center"
+        align="center"
+        pt="40px"
+        pb="40px"
+        w="100%"
+      >
+        <Box textAlign="center">
+          <Stack display="flex" flexDirection="row">
+            <Stack display="flex" flexDirection="row">
+              <Text fontSize="14px" fontWeight="bold" color="#ffffff">
+                {data?.data?.isPlaying && data?.data?.artist
+                  ? data?.data?.artist
+                  : "He's Sleeping"}
+              </Text>
+              {"-"}
+              <Text fontSize="14px" fontWeight="medium" color="#a3a3a3">
+                -{" "}
+                {data?.data?.isPlaying && data?.data?.title
+                  ? data?.data?.title
+                  : "Not Listening"}
+              </Text>
+            </Stack>
+            <Icon
+              as={PiSpotifyLogoDuotone}
+              color={data?.data?.isPlaying ? "green" : "#ffffff"}
+              fontSize="24px"
+            />
+          </Stack>
         </Box>
       </Flex>
     </Box>
