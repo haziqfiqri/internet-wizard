@@ -1,6 +1,9 @@
 import { getNowPlaying } from "@/lib/spotify";
 import { NextRequest, NextResponse } from "next/server";
 
+export const revalidate = 0;
+export const fetchCache = "force-no-store";
+
 export async function GET(req: NextRequest, res: NextResponse) {
   if (req.method === "GET") {
     const response = await getNowPlaying();
@@ -10,10 +13,19 @@ export async function GET(req: NextRequest, res: NextResponse) {
       response.status > 400 ||
       response.data.currently_playing_type !== "track"
     ) {
-      return NextResponse.json({
-        status: 200,
-        isPlaying: false,
-      });
+      return NextResponse.json(
+        {
+          status: 200,
+          isPlaying: false,
+        },
+        {
+          status: 200,
+          headers: {
+            "Content-Type": "application/json",
+            "Cache-Control": "public, s-maxage=180, stale-while-revalidate=90",
+          },
+        }
+      );
     }
 
     const data = {
@@ -27,9 +39,18 @@ export async function GET(req: NextRequest, res: NextResponse) {
       songUrl: response.data.item.external_urls.spotify,
     };
 
-    return NextResponse.json({
-      status: 200,
-      data,
-    });
+    return NextResponse.json(
+      {
+        status: 200,
+        data,
+      },
+      {
+        status: 200,
+        headers: {
+          "Content-Type": "application/json",
+          "Cache-Control": "public, s-maxage=180, stale-while-revalidate=90",
+        },
+      }
+    );
   }
 }

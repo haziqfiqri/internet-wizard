@@ -18,7 +18,9 @@ import useSWR from "swr";
 
 function Footer() {
   const fetcher = (url: any) => fetch(url).then((res) => res.json());
-  const { data } = useSWR("/api/spotify", fetcher);
+  const { data } = useSWR("/api/spotify", fetcher, {
+    revalidateIfStale: true,
+  });
 
   const textToCopy = "_haziq";
   const { onCopy } = useClipboard(textToCopy);
@@ -36,18 +38,6 @@ function Footer() {
       isExternal: true,
       handle: "@haziqfiqri",
     },
-    // {
-    //   name: "Twitter",
-    //   url: "https://twitter.com/_haziqfiqri",
-    //   isExternal: true,
-    //   handle: "@_haziqfiqri",
-    // },
-    // {
-    //   name: "Instagram",
-    //   url: "https://instagram.com/_haziqfiqri",
-    //   isExternal: true,
-    //   handle: "@_haziqfiqri",
-    // },
     {
       name: "Discord",
       url: undefined,
@@ -134,16 +124,11 @@ function Footer() {
           <Stack display="flex" flexDirection="row">
             <Stack display="flex" flexDirection="row">
               <Text fontSize="14px" fontWeight="bold" color="#ffffff">
-                {data?.data?.isPlaying && data?.data?.artist
-                  ? data?.data?.artist
-                  : "He's Sleeping"}
+                {data?.data?.isPlaying ? data?.data?.artist : "He's Sleeping"}
               </Text>
               {"-"}
               <Text fontSize="14px" fontWeight="medium" color="#a3a3a3">
-                -{" "}
-                {data?.data?.isPlaying && data?.data?.title
-                  ? data?.data?.title
-                  : "Not Listening"}
+                - {data?.data?.isPlaying ? data?.data?.title : "Not Listening"}
               </Text>
             </Stack>
             <Icon
