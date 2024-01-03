@@ -4,7 +4,7 @@ import { Box, Text, Flex, Image, Link, Icon, Skeleton } from "@chakra-ui/react";
 import { FiArrowUpRight } from "react-icons/fi";
 import { getArticles } from "@/sanity/sanity-utils";
 import { useEffect, useState } from "react";
-import { Article } from "@/types/Article";
+import type { Article } from "@/types/Article";
 import moment from "moment";
 
 export default function Article() {
@@ -61,7 +61,6 @@ export default function Article() {
               <Box mt={7} key={article._id}>
                 <Flex>
                   <Image
-                    // src="https://picsum.photos/110/80"
                     src={article.image}
                     alt="article"
                     objectFit="contain"

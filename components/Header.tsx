@@ -139,32 +139,6 @@ export default function Header() {
             </Link>
           </MenuList>
         </Menu>
-
-        {/* <Button
-          size="sm"
-          bg="gray.900"
-          color="white"
-          _hover={{ color: "gray.300" }}
-          fontSize="10px"
-          fontWeight="bold"
-          borderRadius="8px"
-          textTransform="uppercase"
-        >
-          menu
-        </Button> */}
-
-        {/* <Button
-          size="sm"
-          bg="gray.900"
-          color="white"
-          _hover={{ color: "gray.300" }}
-          fontSize="10px"
-          fontWeight="bold"
-          borderRadius="8px"
-          textTransform="uppercase"
-        >
-          offline
-        </Button> */}
       </Flex>
     </Box>
   );

@@ -19,7 +19,6 @@ function Hero() {
 
   return (
     <Box bg="black">
-      {/* Upper section */}
       <Flex
         maxW="container.sm"
         mx="auto"

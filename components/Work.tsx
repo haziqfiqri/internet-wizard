@@ -14,7 +14,7 @@ function Work() {
     stacks: Array<string>;
     position: string;
   }> = [
-     {
+    {
       company: "Orius Digital",
       link: "https://www.oriusdigital.com/",
       startDate: "Dec 2023",
@@ -68,7 +68,7 @@ function Work() {
         "A brief enjoyable exposure to the tech field. Worked closely with a hand-picked team of manager, engineers, customer experience and tester.",
       stacks: ["NodeJs", "TypeScript", "PolymerJs", "Docker", "GraphQL"],
       position: "full-time",
-    }
+    },
   ];
 
   return (
@@ -87,17 +87,12 @@ function Work() {
           </Text>
           {workExperiences.map((experience, index) => (
             <Box mt={7} key={index}>
-              {/* TODO: make two cols for size > sm */}
-              {/* <Flex flexDirection={["column", "column", "column", "row"]}>
-                <Box maxW={["30%"]}> */}
               <Text fontSize="14px" fontWeight="medium" color="#a3a3a3">
                 {experience.startDate} - {experience.endDate}{" "}
                 <Badge ml="2" fontSize={10} variant={"solid"}>
                   {experience.position}
                 </Badge>
               </Text>
-              {/* </Box>
-                <Box maxW={["70%", "100%"]}> */}
               <Link
                 href={experience.link}
                 isExternal
@@ -120,8 +115,6 @@ function Work() {
               <Text mt={2} fontSize="14px" color="#a3a3a3">
                 {experience.stacks.join(" • ")}
               </Text>
-              {/* </Box> */}
-              {/* </Flex> */}
             </Box>
           ))}
         </Box>
