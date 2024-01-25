@@ -22,7 +22,7 @@ function Work() {
       title: "L4 Software Engineer",
       description:
         "10x engineer that enabled digital agencies to expands more than just creative e-commerce and digital marketing.",
-      stacks: ["NestJs", "TypeScript", "ReactJs", "AWS Cloud", "SQL"],
+      stacks: ["NodeJs", "JavaScript", "Shopify", "WordPress", "Kinsta"],
       position: "full-time",
     },
     {
@@ -32,7 +32,7 @@ function Work() {
       endDate: "Dec 2023",
       title: "L3 Software Engineer",
       description:
-        "Donning two hats currently with orchestration team. Leveraging software engineering and cloud orchestrating.",
+        "Donning two hats with orchestration team. Leveraging software engineering and cloud orchestrating.",
       stacks: ["Laravel", "PHP", "ReactJs", "AWS Cloud", "SQL"],
       position: "full-time",
     },
