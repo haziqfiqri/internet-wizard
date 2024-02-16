@@ -22,7 +22,7 @@ function Work() {
       title: "L4 Software Engineer",
       description:
         "10x engineer that enabled digital agencies to expands more than just creative e-commerce and digital marketing.",
-      stacks: ["NodeJs", "JavaScript", "Shopify", "WordPress", "Kinsta"],
+      stacks: ["NodeJs", "JavaScript", "AlpineJs", "Shopify", "WordPress"],
       position: "full-time",
     },
     {
