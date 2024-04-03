@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Links() {
   return (
-    <footer>
+    <footer className="bg-white border-t bottom-0">
       <div className="px-5 py-12 mx-auto max-w-7xl sm:px-6 md:flex md:items-center md:justify-between lg:px-12">
         <div className="flex justify-center mb-8 space-x-6 md:order-last md:mb-0 font-medium font-inter text-black text-2xl">
           <Link

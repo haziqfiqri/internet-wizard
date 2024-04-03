@@ -12,12 +12,6 @@ const config: Config = {
         playfair: ["var(--font-playfair)"],
         inter: ["var(--font-inter)"],
       },
-      backgroundImage: {
-        duck: "url('/assets/hero/duck.webp')",
-        flower: "url('/assets/hero/flower.webp')",
-        flower2: "url('/assets/hero/flower2.webp')",
-        cat: "url('/assets/hero/cat.webp')",
-      },
     },
   },
   plugins: [],

@@ -9,7 +9,7 @@ export default function Spotify() {
   });
 
   return (
-    <section className="relative w-full h-screen overflow-hidden bg-center bg-no-repeat bg-cover bg-flower">
+    <section className="relative w-full pb-24">
       <div className="container relative w-full px-8 pt-0 pb-0 mx-auto lg:px-4">
         <div className="flex flex-col w-full text-left lg:text-center">
           <strong className="mb-4 text-xs font-inter font-semibold tracking-widest uppercase text-slate-500">

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <section className="border-b">
+    <section className="border-b bg-white">
       <div className="flex flex-col w-full p-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-16 lg:items-center lg:justify-between lg:flex-row md:px-6">
         <div className="flex flex-row items-center justify-between">
           <Link
